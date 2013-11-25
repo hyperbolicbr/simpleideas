@@ -1,0 +1,241 @@
+/*
+Theme Name: Simple Ideas
+Theme URI: http://www.hyperbolic.com.br/blog/smartideas
+Author: Hyperbolic
+Author URI: http://www.hyperbolic.com.br
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: simpleideas
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+@import "http://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700|Cabin:400";
+
+body {
+	padding-top: 70px;
+}
+
+.page-header h1 {
+	font-family: 'Roboto Slab';
+	font-weight: 900;
+	font-size: 35px;
+}
+
+
+/* navbar */
+
+.navbar-brand {
+	padding: 7px;
+}
+
+.navbar > .container .navbar-brand {
+	margin-left: 0;
+}
+
+.navbar-inverse .navbar-brand {
+	color: #FFF;
+	font-family: 'Roboto Slab';
+	font-weight: 100;
+}
+
+.navbar-nav > li {
+	border-right: 1px solid #666;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+	color: #FFF;
+	font-family: 'Cabin';
+	text-transform: uppercase;
+}
+
+.si-menu-icon {
+	margin-right: 10px;
+}
+
+.si-search {
+	width: 240px;
+	padding: 5px;
+}
+
+
+/* si-sidebar */
+
+.si-sidebar.affix {
+  position: static;
+}
+
+@media (min-width: 992px) {
+	.si-sidebar.affix {
+		width: 213px;
+	}
+	.si-sidebar.affix {
+	    position: fixed; /* Undo the static from mobile first approach */
+	    top: 80px;
+	  }
+}
+
+@media (min-width: 1200px) {
+	.si-sidebar.affix {
+	width: 263px;
+	}
+}
+
+.si-widget {
+	background: #FFFDF0;
+	border-top: 1px solid #333;
+	border-bottom: 3px solid #333;
+	min-height: 50px;
+	padding: 10px;
+	margin-bottom: 20px;
+	font-family: 'Roboto Slab';
+	font-weight: 200;
+	color: #666;
+}
+
+.si-widget h1 {
+	font-family: 'Roboto Slab';
+	font-weight: 900;
+	font-size: 20px;
+	margin-top: 0;
+	color: #000;
+}
+
+
+/* si-post */
+.si-post {
+	border-bottom: 1px dashed #999;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.si-post:first-child {
+	padding-top: 0;
+}
+
+.si-post-title {
+	font-family: 'Roboto Slab', serif;
+	font-weight: 900;
+	font-size: 30px;
+}
+
+.si-post-title a {
+	color: #000;
+}
+
+.si-post-content p {
+	font-family: 'Roboto Slab';
+    font-weight: 300;
+    font-size: 17px;
+    color: #444;
+    margin-bottom: 20px;
+}
+
+.si-post-meta {
+	font-family: 'Roboto Slab', serif;
+	text-transform: uppercase;
+	margin-bottom: 30px;
+	font-weight: 100;
+}
+
+.si-post-meta a {
+	background: #EEE;
+	color: #BBA721;	
+}
+
+.si-post-meta .glyphicon {
+	color: #AAA;
+	margin-right: 5px;
+	height: 10px;
+}
+
+.si-post-author, .si-post-categories, .si-post-comments {
+	margin-right: 15px;
+}
+
+
+/* =WordPress Core
+-------------------------------------------------------------- */
+.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+.aligncenter,
+div.aligncenter {
+    display: block;
+    margin: 5px auto 5px auto;
+}
+
+.alignright {
+    float:right;
+    margin: 5px 0 20px 20px;
+}
+
+.alignleft {
+    float: left;
+    margin: 5px 20px 20px 0;
+}
+
+.aligncenter {
+    display: block;
+    margin: 5px auto 5px auto;
+}
+
+a img.alignright {
+    float: right;
+    margin: 5px 0 20px 20px;
+}
+
+a img.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+a img.alignleft {
+    float: left;
+    margin: 5px 20px 20px 0;
+}
+
+a img.aligncenter {
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+.wp-caption {
+    background: #fff;
+    border: 1px solid #f0f0f0;
+    max-width: 96%; /* Image does not overflow the content area */
+    padding: 5px 3px 10px;
+    text-align: center;
+}
+
+.wp-caption.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+.wp-caption.alignleft {
+    margin: 5px 20px 20px 0;
+}
+
+.wp-caption.alignright {
+    margin: 5px 0 20px 20px;
+}
+
+.wp-caption img {
+    border: 0 none;
+    height: auto;
+    margin: 0;
+    max-width: 98.5%;
+    padding: 0;
+    width: auto;
+}
+
+.wp-caption p.wp-caption-text {
+    font-size: 11px;
+    line-height: 17px;
+    margin: 0;
+    padding: 0 4px 5px;
+}
+

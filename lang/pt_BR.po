@@ -1,0 +1,23 @@
+msgid "Follow us"
+msgstr "Siga-nos"
+
+msgid "no responses"
+msgstr "sem comentários"
+
+msgid "one response"
+msgstr "um comentário"
+
+msgid "% responses"
+msgstr "% comentários"
+
+msgid "Left sidebar"
+msgstr "Barra lateral esquerda"
+
+msgid "Left sidebar"
+msgstr "Barra lateral esquerda"
+
+msgid "Widgets in this area will be shown on the left-hand side"
+msgstr "Widgets nesta área vão aparecer na lateral esquerda do site"
+
+msgid "Facebook Page URL"
+msgstr "URL da página no Facebook"
