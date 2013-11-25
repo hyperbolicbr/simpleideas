@@ -21,3 +21,6 @@ msgstr "Widgets nesta área vão aparecer na lateral esquerda do site"
 
 msgid "Facebook Page URL"
 msgstr "URL da página no Facebook"
+
+msgid "Top menu"
+msgstr "Menu do topo"

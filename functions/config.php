@@ -6,7 +6,7 @@ function theme_setup() {
 	add_filter( 'show_admin_bar', '__return_false' );
 	add_theme_support( 'post-thumbnails' );
 	register_sidebar(array('name' => __( 'Left sidebar', 'simpleideas'),'id' => 'left-sidebar', 'description' => __( 'Widgets in this area will be shown on the left-hand side', 'simpleideas'),'before_widget' => '<div id="%1$s" class="si-widget %2$s">','after_widget'  => '</div>','before_title' => '<h1>','after_title' => '</h1>'));
-	register_nav_menus(array('navigation' => 'Menu de navegação'));
+	register_nav_menus(array('navigation' => 'Top menu'));
 }
 add_action( 'after_setup_theme', 'theme_setup' );
 

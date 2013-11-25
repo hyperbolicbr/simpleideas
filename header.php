@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?php wp_title( '|', true, 'right' ); ?></title>
 	
-	<link href="<?php bloginfo("template_directory"); ?>/css/bootstrap.css" rel="stylesheet">
-    <link href="<?php bloginfo("template_directory"); ?>/style.css" rel="stylesheet">
+	<link href="<?php bloginfo("template_directory"); ?>/css/bootstrap.css" rel="stylesheet" />
+    <link href="<?php bloginfo("template_directory"); ?>/style.css" rel="stylesheet" />
     <?php wp_head(); ?>
     
 
@@ -30,10 +30,15 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="<?php bloginfo("home"); ?>"><img src="<?php bloginfo("template_directory"); ?>/images/avatar.png" /> <?php bloginfo("name"); ?></a>
+          <a class="navbar-brand" href="<?php bloginfo("home"); ?>"><?php bloginfo("name"); ?></a>
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
+          	<?php
+          		$menu_args["theme_location"] = "navigation";
+				$menu_args["items_wrap"] = "%3$s";
+				wp_nav_menu($menu_args);
+			?>
             <?php if ((get_option("si_facebook") != null) || (get_option("si_twitter") != null) || (get_option("si_instagram") != null) || (get_option("si_linkedin") != null)) { ?>
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown"><b class="glyphicon glyphicon-bullhorn si-menu-icon"></b> <?php echo __("Follow us", "simpleideas"); ?> <b class="caret"></b></a>
@@ -46,7 +51,7 @@
             </li>
             <?php } ?>
             <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown"><b class="glyphicon glyphicon-search"></b> <span class="hidden-md hidden-lg"><?php echo __("Search"); ?> <b class="caret"></b></span></a>
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="visible-md visible-lg"><b class="glyphicon glyphicon-search"></b> <b class="caret"></b></span><span class="hidden-md hidden-lg"><b class="glyphicon glyphicon-search si-menu-icon"></b> <?php echo __("Search"); ?> <b class="caret"></b></span></a>
               <ul class="dropdown-menu">
 				<li class="si-search">
 					<form class="form-inline" role="form" method="get">
